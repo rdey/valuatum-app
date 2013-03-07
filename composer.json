@@ -1,0 +1,16 @@
+{
+    "name": "redeye/valuatum",
+    "description": "Querybuilder/Soap client for Valuatum API",
+    "authors": [
+        {
+            "name": "samuel",
+            "email": "afsd@adsf.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {"Redeye\\ValuatumClient": "src"}
+    }
+}

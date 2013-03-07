@@ -1,5 +1,6 @@
 <?php
 
+namespace Redeye\ValuatumClient;
 
 /**
  * This class is responsible for implementing the objects required in Valuatum SOAP protocol.
@@ -408,7 +409,3 @@ class ValuatumSoapProtocol
     }
 
 }
-
-;
-
-?>
