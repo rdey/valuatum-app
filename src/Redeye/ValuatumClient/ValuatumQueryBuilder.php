@@ -129,7 +129,7 @@ class ValuatumQueryBuilder
      * @internal param $soapPassword
      * @return \Valuatum\ValuatumQueryBuilder
      */
-    public function __construct($soapUsername = "developer", $soapPassword = "L1bmXW1iUZkJ")
+    public function __construct($soapUsername, $soapPassword)
     {
         $this->soapUsername = $soapUsername;
         $this->soapPassword = $soapPassword;
