@@ -4,8 +4,8 @@ namespace Redeye\ValuatumClient;
 
 use Redeye\ValuatumClient\ExpressionTree;
 use Redeye\ValuatumClient\ValuatumSoapProtocol;
+use Redeye\ValuatumClient\WsseAuthHeader;
 use \SoapClient;
-use \SoapHeader;
 
 /**
  * This class is responsible for building and executing SOAP queries over the Valuatum Web Service.
@@ -736,10 +736,7 @@ class ValuatumQueryBuilder
                 $request["soapAction"],
                 $request["paramList"],
                 null,
-                new SoapHeader(
-                    "http://www.w3.org/2001/XMLSchema",
-                    "UserAgent"
-                )
+                new WsseAuthHeader($this->soapUsername, $this->soapPassword)
             );
 
         } catch (Exception $e) {
